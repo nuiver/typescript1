@@ -1,8 +1,9 @@
 function reality(person) {
-    console.log(person.name + " is " + person.age + " jaar oud.");
+    var verdict = person.name + " is " + person.age + "jaar oud.";
+    return verdict;
 }
 var nuiver = {
     name: "Mark",
     age: 39
 };
-reality(nuiver);
+console.log(reality(nuiver));

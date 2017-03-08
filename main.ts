@@ -2,13 +2,14 @@ interface Person {
   name: string;
   age: number;
 }
-function reality(person: Person):  void{
-  console.log( person.name + " is " + person.age + "jaar oud.")
+function reality(person: Person):  string {
+  let verdict: string = person.name + " is " + person.age + " jaar oud.";
+  return verdict;
 }
 
-var nuiver = {
+let nuiver = {
   name: "Mark",
   age: 39
 };
 
-reality(nuiver);
+console.log(reality(nuiver));
